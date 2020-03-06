@@ -1,0 +1,7 @@
+{
+  "output": "./ts-interface",
+  "entry": "com.cupacm.javabackend.dubbo",
+  "entryJarPath": "./target/java-backend-0.0.1-SNAPSHOT.jar",
+  "libDirPath": "./target/dependency",
+  "providerSuffix": "Provider"
+}

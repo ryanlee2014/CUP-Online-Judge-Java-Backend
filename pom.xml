@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.5.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.cupacm</groupId>
+    <artifactId>java-backend</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
+    <name>java-backend</name>
+    <packaging>pom</packaging>
+    <description>CUP Online Judge Java Backend</description>
+    <properties>
+        <skip_maven_deploy>true</skip_maven_deploy>
+        <revision>0.0.2-SNAPSHOT</revision>
+    </properties>
+    <modules>
+        <module>api</module>
+        <module>service</module>
+        <module>model</module>
+        <module>mapper</module>
+    </modules>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <generateBackupPoms>false</generateBackupPoms>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
